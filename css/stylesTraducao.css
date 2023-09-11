@@ -99,7 +99,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/img/assistant_logo.png') no-repeat;
+    background: url('assistant_logo.png') no-repeat;
 
     background-size: 354px 374px;
     background-position: 85% center;
