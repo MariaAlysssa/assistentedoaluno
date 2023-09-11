@@ -13,7 +13,7 @@
 }
 
 :root{
-    --bg-color: #FFFFFE;
+    --bg-color: #f6fcfa;
     --second-bg-color: #D9F8FF;
     --text-color: #000000;
     --main-color: #3CACAE;
@@ -64,6 +64,10 @@ body{
     font-weight: 600;
 }
 
+.bxs-group{
+    font-size: 20px; /* Tamanho desejado para o ícone */
+}
+
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
@@ -94,10 +98,10 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/img/assistencia-ao-aluno__4_-removebg-preview.png') no-repeat;
+    background: url('/img/assistente_logo.png') no-repeat;
 
-    background-size: 600px 400px;
-    background-position: right;
+    background-size: 354px 374px;
+    background-position: 85% center;
 }
 
 .home-content{
@@ -331,6 +335,239 @@ span{
     background: var(--second-bg-color);
 }
 
+/*=================================EQUIPE====================*/
+
+
+
+.team{
+    background: var(--second-bg-color);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2rem;
+}
+
+.team h2.heading{
+    margin-top: 80px;
+}
+
+.team_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    
+}
+
+.team_member {
+    background: var(--main-color);
+    padding: 1rem;
+    border: 2px solid transparent;
+    width: 200px;
+    height: 270px;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem;
+    transition: var(--bg-color) 0.3s, transform 0.5s ease; /* Combine as transições em uma única regra */
+}
+
+
+
+.team_member.flipped {
+    transform: rotateY(180deg);
+}
+
+.team_member:hover {
+    background: transparent;
+    border-color: var(--main-color);
+    
+}
+
+
+
+.team_member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team_member-info p{
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.team_member-socials{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--second-bg-color);
+    border-radius: 1rem 0 0 1rem ;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--bg-color);
+
+    border: 2px solid var(--main-color);
+    
+}
+
+.team_member:hover 
+.team_member-socials{
+    right: 0;
+}
+
+.team_member-socials a{
+    padding: 1rem;
+    color: #000000;
+}
+
+.team_member-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.img-tamanho{
+    padding-top: 1rem;
+    height: 50px;
+}
+
+/*=================================================================*/
+
+.teacher{
+    background: var(--second-bg-color);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2rem;
+}
+
+.teacher h2.heading{
+    margin-top: 80px;
+}
+
+.teacher_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    
+}
+
+.teacher_member {
+    background: var(--main-color);
+    padding: 1rem;
+    border: 2px solid transparent;
+    width: 300px;
+    height: 440px;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem;
+    transition: var(--bg-color) 0.3s, transform 0.5s ease; /* Combine as transições em uma única regra */
+}
+
+
+
+.teacher_member.flipped {
+    transform: rotateY(180deg);
+}
+
+.teacher_member:hover {
+    background: transparent;
+    border-color: var(--main-color);
+    
+}
+
+
+
+.teacher_member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.teacher_member-info p{
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.teacher_member-socials{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--second-bg-color);
+    border-radius: 1rem 0 0 1rem ;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--bg-color);
+
+    border: 2px solid var(--main-color);
+    
+}
+
+.teacher_member:hover 
+.teacher_member-socials{
+    right: 0;
+}
+
+.teacher_member-socials a{
+    padding: 1.6rem;
+    color: var(--text-color);
+}
+
+.teacher_member-socials i{
+    font-size: 1.3rem;
+}
+
+.teacher_member-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.img-tamanho{
+    padding-top: 1rem;
+    height: 50px;
+}
+
+/* Estilos para o modal de expansão de imagem */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.expanded-image {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 105px;
+    right: 105px;
+    
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/*************/
+
 .normas{
     display: flex;
     justify-content: center;
@@ -435,6 +672,7 @@ span{
     min-height: auto;
     padding-bottom: 5rem;
     background: var(--second-bg-color);
+  
 }
 
 
@@ -480,6 +718,23 @@ span{
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
+    z-index: 1;
+}
+.sigaa-content .content:hover{
+    color: var(--text-color);
+}
+
+.sigaa-content .content:nth-child(2) {
+    background: transparent;
+    color: var(--text-color);
+}
+
+.sigaa-content .content:nth-child(2):hover{
+    color: var(--text-color);
+}
+
+.sigaa-content .content:nth-child(2)::before{
+    background: var(--main-color);
 }
 
 .sigaa-content .content::before{
@@ -520,11 +775,104 @@ span{
 }
 
 
+.biblioteca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    
+}
+
+
+.biblioteca .biblioteca-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.biblioteca-row .biblioteca-column{
+    flex: 1 1 40rem;
+}
+
+.biblioteca-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.biblioteca-column .biblioteca-box{
+    border-left: .2rem solid var(--main-color);
+}
+
+.biblioteca-box .biblioteca-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.biblioteca-box .biblioteca-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.biblioteca-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.biblioteca-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+   background: var(--second-bg-color);
+   z-index: -1;
+   transition: .5s;
+
+}
+
+.biblioteca-content .content:hover:before{
+    width: 100%;
+}
+
+.biblioteca-content .content .resolution{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+
+}
+
+.biblioteca-content .content .resolution i{
+    padding-right: .5rem;
+}
+
+.biblioteca-content .content h3{
+    font-size: 2rem;
+}
+
+.biblioteca-content .content p{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+
 /********************************/
 .problema{
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .problema form{
@@ -591,6 +939,7 @@ span{
     flex-direction: column;
     min-height: auto;
     padding-bottom: 5rem;
+    background: var(--second-bg-color);
 }
 
 .contatos .contatos-row{
@@ -631,6 +980,24 @@ span{
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
+    z-index: 1;
+}
+
+.contatos-content .content:hover{
+    color: var(--text-color);
+}
+
+.contatos-content .content:nth-child(2) {
+    background: transparent;
+    color: var(--text-color);
+}
+
+.contatos-content .content:nth-child(2):hover{
+    color: var(--text-color);
+}
+
+.contatos-content .content:nth-child(2)::before{
+    background: var(--main-color);
 }
 
 .contatos-content .content::before{
@@ -640,9 +1007,10 @@ span{
     left: 0;
     width: 0;
     height: 100%;
-   background: var(--second-bg-color);
+   background: var(--bg-color);
    z-index: -1;
    transition: .5s;
+   
 
 }
 
@@ -686,7 +1054,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+   
 
 }
 
@@ -725,9 +1093,13 @@ span{
     color: var(--bg-color);
 }
 
-img{
+.img-redimensionada{
     width: 500px;
 }
+
+/*img{
+    width: 500px;
+}*/
 
 
 
@@ -745,11 +1117,41 @@ img{
     html{
         font-size: 55%;
     }
+    .header{
+        padding: 2rem 1%;
+        
+       }
+
+    .team_member-info p{
+        
+        font-size: 1.5rem;
+    }
+
+    .team_member-info h3{
+        font-size: 1.4rem;
+    }
+
+    .teacher_member-info p{
+        
+        font-size: 1.5rem;
+    }
+
+    .teacher_member-info h3{
+        font-size: 1.6rem;
+    }
+
+   
 }
 
 @media (max-width:991px){
    .header{
-    padding: 2rem 4%;
+    padding: 2rem 1%;
+    
+   }
+
+   .navbar a{
+    font-size: 1.6rem;
+    
    }
 
    section{
@@ -767,9 +1169,26 @@ img{
 
    
    
+   
   
 }
 
+@media (max-width:835px){
+    
+ 
+    .navbar a{
+     font-size: 1.6rem;
+     padding-left: -1.5rem;
+    }
+ 
+    
+    
+
+   
+   
+ }
+
+ 
 @media (max-width:768px){
     .header{
         background: var(--bg-color);
@@ -837,12 +1256,115 @@ img{
 
     .container {
         flex-direction: column;
-      }
+    }
     
       .normas-row {
         flex-basis: 100%;
-      }
+    }
+
+    .team{
+        padding: 1rem;
+        text-align: center;
+    }
     
+    .team_container{
+        flex-direction: column; /* Empilhe os membros da equipe verticalmente */
+        gap: 2rem;
+        align-items: center;
+       
+
+    }
+    
+    .team_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    .team_member p{
+        margin-bottom: 1.5rem;
+    }
+
+    
+
+    .team_member-info p{
+        
+        font-size: 1.6rem;
+    }
+
+    .team_member-info h3{
+        font-size: 1.7rem;
+    }
+    
+    .img-tamanho{
+        padding-top: -1cm;
+        height: 50px;
+    }
+
+     .team_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    .team_member p{
+        margin-bottom: 1.5rem;
+    }
+
+    .team_member-info{
+        white-space: nowrap;
+    }
+
+    .team_member-info p{
+        
+        font-size: 1.65rem;
+    }
+
+    .team_member-info h3{
+        font-size: 1.7rem;
+    }
+    
+    .img-tamanho{
+        padding-top: -1cm;
+        height: 50px;
+    }
+
+    .teacher{
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .teacher_container{
+        flex-direction: column; /* Empilhe os membros da equipe verticalmente */
+        gap: 2rem;
+        align-items: center;
+       
+
+    }
+    
+    .teacher_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    .teacher_member p{
+        margin-bottom: 1.5rem;
+    }
+
+    
+
+    .teacher_member-info p{
+        
+        font-size: 1.65rem;
+    }
+
+    .teacher_member-info h3{
+        font-size: 1.7rem;
+    }
+
+    .img-redimensionada{
+        max-width: 100%; /* A imagem não será maior do que o contêiner pai */
+        width: auto; /* Redefine a largura para automática */
+        height: auto; /* Mantém a proporção da imagem */
+    }
 
 }
 
@@ -863,6 +1385,84 @@ img{
     .home-sci a{
         width: 38px;
         height: 38px;
+    }
+
+    .team{
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .team_container{
+        flex-direction: column; /* Empilhe os membros da equipe verticalmente */
+        gap: 2rem;
+        align-items: center;
+       
+
+    }
+    
+    .team_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    .team_member p{
+        margin-bottom: 1.5rem;
+    }
+
+    .team_member-info{
+        white-space: nowrap;
+    }
+
+    .team_member-info p{
+        
+        font-size: 1.65rem;
+    }
+
+    .team_member-info h3{
+        font-size: 1.7rem;
+    }
+    
+    .img-tamanho{
+        padding-top: -1cm;
+        height: 50px;
+    }
+
+    .teacher{
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .teacher_container{
+        flex-direction: column; /* Empilhe os membros da equipe verticalmente */
+        gap: 2rem;
+        align-items: center;
+       
+
+    }
+    
+    .teacher_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    .teacher_member p{
+        margin-bottom: 1.5rem;
+    }
+
+    
+
+    .teacher_member-info p{
+        
+        font-size: 1.7rem;
+    }
+
+    .teacher_member-info h3{
+        font-size: 1.8rem;
+    }
+    
+    .img-tamanho{
+        padding-top: -1cm;
+        height: 50px;
     }
 
     @media (max-width:462px){
@@ -886,9 +1486,55 @@ img{
             margin-top: 2rem;
         }
 
-        img {
+        .img-redimensionada {
             width: 100%;
-          }
+       }
+
+       
+    
+    
+    
+    .team_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    
+
+    .team_member-info{
+        white-space: nowrap;
+    }
+
+    .team_member-info p{
+        
+        font-size: 1.8rem;
+    }
+
+    .team_member-info h3{
+        font-size: 1.9rem;
+    }
+    
+    .teacher_member{
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: 300px;
+    }
+
+    
+
+   
+
+    .teacher_member-info p{
+        
+        font-size: 1.8rem;
+    }
+
+    .teacher_member-info h3{
+        font-size: 1.9rem;
+    }
+    
+    
+
+          
 
     }
 

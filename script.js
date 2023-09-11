@@ -49,3 +49,5 @@ inputEmail.addEventListener('blur', () => {
         labelEmail.classList.remove('active');
     }
 });
+
+
