@@ -94,13 +94,16 @@ section{
 
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('img/assistente_logo.png') no-repeat;
-    background-size: 354px 374px;
-    background-position: 85% center;
+}
+
+.background-image {
+    width: 354px; /* Largura da imagem */
+    height: 374px; /* Altura da imagem */
+    margin-left: auto; /* Alinhar à direita (para manter a posição original) */
 }
 
 .home-content{
