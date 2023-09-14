@@ -421,7 +421,11 @@ span{
 
 .team_member-socials a{
     padding: 1rem;
-    color: #000000;
+    color: var(--text-color);
+}
+
+.team_member-socials i{
+    font-size: 1.1rem;
 }
 
 .team_member-image img {
@@ -1182,7 +1186,7 @@ span{
     
  
     .navbar a{
-     font-size: 1.6rem;
+     font-size: 1.5rem;
      padding-left: -1.5rem;
     }
  
@@ -1191,6 +1195,19 @@ span{
         display: none;
     }
 
+   
+   
+ }
+
+ @media (max-width:805px){
+    
+ 
+    .navbar a{
+     font-size: 1.3rem;
+     padding-left: -1.3rem;
+    }
+ 
+    
    
    
  }
@@ -1334,6 +1351,15 @@ span{
         height: 50px;
     }
 
+    .team_member-socials a{
+        padding: 1.3rem;
+        
+    }
+    
+    .team_member-socials i{
+        font-size: 1.4rem;
+    }
+
     .teacher{
         padding: 1rem;
         text-align: center;
@@ -1360,7 +1386,7 @@ span{
 
     .teacher_member-info p{
         
-        font-size: 1.65rem;
+        font-size: 1.60rem;
     }
 
     .teacher_member-info h3{
@@ -1375,6 +1401,15 @@ span{
 
     .background-image{
         display: none;
+    }
+
+    .teacher_member-socials a{
+        padding: 1.4rem;
+        
+    }
+    
+    .teacher_member-socials i{
+        font-size: 1.6rem;
     }
 
 }
